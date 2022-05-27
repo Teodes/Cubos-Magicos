@@ -1,0 +1,28 @@
+// NavBar
+nav {
+  padding: 1rem;
+  background-color: rgb(33, 31, 54);
+  color: whitesmoke;
+  font-size: 2rem;
+
+  display: flex;
+
+  .Logo {
+    display: flex;
+    gap: 1rem;
+  }
+
+  img {
+    width: 3rem;
+  }
+  ul {
+    font-size: 1.5rem;
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    a {
+      color: whitesmoke;
+    }
+  }
+}
