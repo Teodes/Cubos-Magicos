@@ -1,4 +1,19 @@
 // NavBar
+
+.navbar-brand {
+  display: flex;
+  gap: 1rem;
+  color: whitesmoke;
+  align-items: center;
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+  span {
+    font-size: 2.5rem;
+  }
+}
+
 nav {
   padding: 1rem;
   background-color: rgb(33, 31, 54);
@@ -10,11 +25,9 @@ nav {
   .Logo {
     display: flex;
     gap: 1rem;
+    color: whitesmoke;
   }
 
-  img {
-    width: 3rem;
-  }
   ul {
     font-size: 1.5rem;
     margin-left: auto;
