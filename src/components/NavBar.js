@@ -2,8 +2,7 @@ import logo from "../images/logo.png";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import CartWidget from "./CartWidget";
 
 function NavBar() {
   return (
@@ -21,7 +20,7 @@ function NavBar() {
             <Nav.Link href="#minx">Minx</Nav.Link>
             <Nav.Link href="#engranajes">Engranajes</Nav.Link>
             <Nav.Link href="#carrito">
-              <FontAwesomeIcon icon={faShoppingCart} />
+              <CartWidget />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
