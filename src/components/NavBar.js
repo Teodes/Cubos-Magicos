@@ -6,7 +6,7 @@ import CartWidget from "./CartWidget";
 
 function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="Logo" />
@@ -18,7 +18,7 @@ function NavBar() {
             <Nav.Link href="#cubicos">Cúbicos</Nav.Link>
             <Nav.Link href="#cuboides">Cuboides</Nav.Link>
             <Nav.Link href="#minx">Minx</Nav.Link>
-            <Nav.Link href="#engranajes">Engranajes</Nav.Link>
+            <Nav.Link href="#otros">Otros</Nav.Link>
             <Nav.Link href="#carrito">
               <CartWidget />
             </Nav.Link>
