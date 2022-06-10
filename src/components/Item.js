@@ -4,8 +4,21 @@ import { toast } from "react-toastify";
 import ItemCount from "./ItemCount";
 import "react-toastify/dist/ReactToastify.css";
 
-function Product(props) {
+function Item(props) {
   const [qty, setQty] = useState(1);
+
+  function addToCart() {
+    toast.success(`${qty} ítems añadidos`, {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  }
 
   const error = (msg) => {
     toast.error(msg, {
@@ -20,32 +33,22 @@ function Product(props) {
     });
   };
 
-  function valueChange(operation) {
-    if (operation === "+") {
-      if (qty < props.stock) {
-        setQty(qty + 1);
-      } else {
-        error("Límite de stock alcanzado");
-      }
-    }
-    if (operation === "-") {
-      if (qty > 1) {
-        setQty(qty - 1);
-      } else {
-        error("Mínimo de compra posible");
-      }
-    }
-  }
-
   return (
     <Card className="my-4" bg="dark" style={{ width: "18rem" }}>
       <Card.Img variant="top" src={props.src} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
-        <ItemCount stock={props.stock} initial={qty} func={valueChange} />
+        <ItemCount
+          stock={props.stock}
+          initial={qty}
+          setQty={setQty}
+          qty={qty}
+          onError={error}
+          onBuy={addToCart}
+        />
       </Card.Body>
     </Card>
   );
 }
 
-export default Product;
+export default Item;
