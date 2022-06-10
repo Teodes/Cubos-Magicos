@@ -15,10 +15,9 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#cubicos">Cúbicos</Nav.Link>
-            <Nav.Link href="#cuboides">Cuboides</Nav.Link>
-            <Nav.Link href="#minx">Minx</Nav.Link>
-            <Nav.Link href="#otros">Otros</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#tienda">Tienda</Nav.Link>
+            <Nav.Link href="#contacto">Contacto</Nav.Link>
             <Nav.Link href="#carrito">
               <CartWidget />
             </Nav.Link>
