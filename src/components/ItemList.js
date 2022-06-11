@@ -12,14 +12,14 @@ export default function ItemList() {
   });
   return (
     <>
-      {products.map((product) => {
+      {products.map((product) => (
         <Item
           name={product.name}
           key={product.id}
           stock={product.stock}
           src={product.url}
-        />;
-      })}
+        />
+      ))}
     </>
   );
 }
