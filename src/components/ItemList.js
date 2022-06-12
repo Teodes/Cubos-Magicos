@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { getFetch } from "./getFetch";
 import Item from "./Item";
 
 export default function ItemList() {
@@ -7,13 +6,12 @@ export default function ItemList() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getFetch(products)
-      .then((response) => {
-        setProducts(response);
-      })
+    fetch("productsData.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data))
       .finally(() => {
         setLoading(false);
-      });
+      }, []);
   });
   return (
     <>
@@ -25,7 +23,7 @@ export default function ItemList() {
             name={product.name}
             key={product.id}
             stock={product.stock}
-            src={product.url}
+            src={product.img}
           />
         ))
       )}
