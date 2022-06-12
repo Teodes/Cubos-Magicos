@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "2x2x2",
+    "stock": "23",
+    "img": "images/products/cube2.jpg"
+  },
+  {
+    "id": "2",
+    "name": "3x3x3",
+    "stock": "31",
+    "img": "images/products/cube3.jpg"
+  },
+  {
+    "id": "3",
+    "name": "4x4x4",
+    "stock": "18",
+    "img": "images/products/cube4.jpg"
+  },
+  {
+    "id": "4",
+    "name": "3x3x5",
+    "stock": "7",
+    "img": "images/products/cuboide335.jpg"
+  },
+  {
+    "id": "5",
+    "name": "3x3x6",
+    "stock": "5",
+    "img": "images/products/cuboide336.jpg"
+  },
+  {
+    "id": "6",
+    "name": "3x3x9",
+    "stock": "4",
+    "img": "images/products/cuboide339.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Gear",
+    "stock": "3",
+    "img": "images/products/gear3.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Mirror",
+    "stock": "15",
+    "img": "images/products/mirror3.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Skew",
+    "stock": "9",
+    "img": "images/products/skew.png"
+  },
+  {
+    "id": "10",
+    "name": "Pyraminx",
+    "stock": "13",
+    "img": "images/products/pyraminx.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Kilominx",
+    "stock": "6",
+    "img": "images/products/kilominx.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Megaminx",
+    "stock": "8",
+    "img": "images/products/megaminx.jpg"
+  }
+]
