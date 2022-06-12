@@ -1,4 +1,3 @@
-import logo from "./images/logo.png";
 import "./scss/_main.scss";
 import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
@@ -10,7 +9,7 @@ function App() {
     <div className="App">
       <NavBar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={"images/logo/logo.png"} className="App-logo" alt="logo" />
         <span>Página en construcción</span>
       </header>
       <ItemListContainer greeting="¡Bienvenidos a nuestra tienda!" />
