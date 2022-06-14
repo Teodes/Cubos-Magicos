@@ -40,11 +40,10 @@ function Item(props) {
         <Card.Title>{props.name}</Card.Title>
         <ItemCount
           stock={props.stock}
-          initial={qty}
           setQty={setQty}
           qty={qty}
-          onError={error}
-          onBuy={addToCart}
+          error={error}
+          addToCart={addToCart}
         />
       </Card.Body>
     </Card>

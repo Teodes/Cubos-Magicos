@@ -1,38 +1,35 @@
 import { Button, ButtonGroup } from "react-bootstrap";
 
-export default function ItemCount({
-  initial,
-  valueChange,
-  setQty,
-  stock,
-  onError,
-  onBuy,
-}) {
-  let currentValue = initial;
+export default function ItemCount({ stock, setQty, qty, error, addToCart }) {
   function valueChange(operation) {
     if (operation === "+") {
-      if (currentValue < stock) {
-        setQty(currentValue + 1);
+      if (qty < stock) {
+        setQty(qty + 1);
       } else {
-        onError("Límite de stock alcanzado");
+        error("Límite de stock alcanzado");
       }
     }
     if (operation === "-") {
-      if (currentValue > 1) {
-        setQty(currentValue - 1);
+      if (qty > 1) {
+        setQty(qty - 1);
       } else {
-        onError("Mínimo de compra posible");
+        error("Mínimo de compra posible");
       }
     }
   }
   return (
     <div className="row justify-content-around">
-      <Button size="s" variant="outline-info" className="col-6" onClick={onBuy}>
+      <Button
+        size="s"
+        variant="outline-info"
+        className="col-6"
+        onClick={addToCart}
+      >
         <strong>Comprar</strong>
       </Button>
       <div className="row col-6">
         <div className="col-7 bg-light text-dark rounded-start">
-          <p>{currentValue}</p>
+          <p>{qty}</p>
         </div>
         <ButtonGroup size="sm" vertical className="row col-5">
           <Button
