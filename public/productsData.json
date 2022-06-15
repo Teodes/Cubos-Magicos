@@ -6,7 +6,7 @@
     "img": "images/products/cube2.jpg",
     "price": "0",
     "brand": "Moyu",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "2",
@@ -14,8 +14,8 @@
     "stock": "31",
     "img": "images/products/cube3.jpg",
     "price": "0",
-    "brand": "",
-    "description": "Moyu"
+    "brand": "Moyu",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "3",
@@ -24,7 +24,7 @@
     "img": "images/products/cube4.jpg",
     "price": "0",
     "brand": "Moyu",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "4",
@@ -33,7 +33,7 @@
     "img": "images/products/cuboide335.jpg",
     "price": "0",
     "brand": "WitEden",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "5",
@@ -42,7 +42,7 @@
     "img": "images/products/cuboide336.jpg",
     "price": "0",
     "brand": "WitEden",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "6",
@@ -51,7 +51,7 @@
     "img": "images/products/cuboide339.jpg",
     "price": "0",
     "brand": "WitEden",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "7",
@@ -59,8 +59,8 @@
     "stock": "3",
     "img": "images/products/gear3.jpg",
     "price": "0",
-    "brand": "",
-    "description": "Qiyi"
+    "brand": "Qiyi",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "8",
@@ -69,7 +69,7 @@
     "img": "images/products/mirror3.jpg",
     "price": "0",
     "brand": "Moyu",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "9",
@@ -78,7 +78,7 @@
     "img": "images/products/skew.png",
     "price": "0",
     "brand": "Moyu",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "10",
@@ -87,7 +87,7 @@
     "img": "images/products/pyraminx.jpg",
     "price": "0",
     "brand": "Moyu",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "11",
@@ -96,7 +96,7 @@
     "img": "images/products/kilominx.jpg",
     "price": "0",
     "brand": "Qiyi",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "12",
@@ -105,6 +105,6 @@
     "img": "images/products/megaminx.jpg",
     "price": "0",
     "brand": "Qiyi",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   }
 ]
