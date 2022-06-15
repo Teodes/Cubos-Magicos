@@ -1,37 +1,12 @@
 import { useState } from "react";
 import { Card } from "react-bootstrap";
-import { toast } from "react-toastify";
 import ItemCount from "./ItemCount";
 import "react-toastify/dist/ReactToastify.css";
+import { error } from "../Helpers/error";
+import { addToCart } from "../Helpers/addToCart";
 
 function Item(props) {
   const [qty, setQty] = useState(1);
-
-  function addToCart() {
-    toast.success(`${qty} ítems añadidos`, {
-      position: "bottom-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  }
-
-  const error = (msg) => {
-    toast.error(msg, {
-      position: "bottom-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
 
   return (
     <Card className="my-4" bg="dark" style={{ width: "18rem" }}>
