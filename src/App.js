@@ -1,8 +1,9 @@
 import "./scss/_main.scss";
-import ItemListContainer from "./components/ItemListContainer";
+import ItemListContainer from "./components/Items/ItemListContainer";
 import NavBar from "./components/NavBar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ItemDetailContainer from "./components/Items/Detail/ItemDetailContainer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <span>Página en construcción</span>
       </header>
       <ItemListContainer greeting="¡Bienvenidos a nuestra tienda!" />
+      <ItemDetailContainer />
       <ToastContainer newestOnTop />
     </div>
   );
