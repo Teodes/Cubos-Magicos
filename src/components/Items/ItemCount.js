@@ -23,7 +23,7 @@ export default function ItemCount({ stock, setQty, qty, error, addToCart }) {
         size="s"
         variant="outline-info"
         className="col-6"
-        onClick={addToCart}
+        onClick={() => addToCart(qty)}
       >
         <strong>Comprar</strong>
       </Button>
