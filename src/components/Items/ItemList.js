@@ -7,12 +7,7 @@ export default function ItemList(props) {
         <h1>Cargando...</h1>
       ) : (
         props.products.map((product) => (
-          <Item
-            name={product.name}
-            key={product.id}
-            stock={product.stock}
-            src={product.img}
-          />
+          <Item product={product} key={product.id} />
         ))
       )}
     </>
