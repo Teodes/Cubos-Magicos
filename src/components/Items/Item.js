@@ -1,25 +1,20 @@
 import { useState } from "react";
-import { Card } from "react-bootstrap";
-import ItemCount from "./ItemCount";
+import { Button, Card } from "react-bootstrap";
 import "react-toastify/dist/ReactToastify.css";
-import { error } from "../Helpers/error";
-import { addToCart } from "../Helpers/addToCart";
+import { Link } from "react-router-dom";
 
-function Item(props) {
+function Item({ product }) {
   const [qty, setQty] = useState(1);
 
   return (
     <Card className="my-4" bg="dark" style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={props.src} />
+      <Card.Img variant="top" src={product.img} />
       <Card.Body>
-        <Card.Title>{props.name}</Card.Title>
-        <ItemCount
-          stock={props.stock}
-          setQty={setQty}
-          qty={qty}
-          error={error}
-          addToCart={addToCart}
-        />
+        <Card.Title>{product.name}</Card.Title>
+        <h3 style={{ color: "limegreen" }}>${product.price}</h3>
+        <Link to={`/detalle/${product.id}`}>
+          <Button variant="outline-warning">Detalle</Button>
+        </Link>
       </Card.Body>
     </Card>
   );

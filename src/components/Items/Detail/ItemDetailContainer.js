@@ -1,18 +1,18 @@
 import ItemDetail from "./ItemDetail";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export default function ItemDetailContainer() {
   const [qty, setQty] = useState(1);
   const [item, setItem] = useState({});
 
+  const { id } = useParams();
   useEffect(() => {
-    fetch("productsData.json")
+    fetch("/productsData.json")
       .then((res) => res.json())
       .then((data) => {
-        let random = Math.floor(Math.random() * data.length);
-        setItem(data[random]);
-      })
-      .finally(console.log(item));
+        setItem(data.find((prod) => prod.id === id));
+      });
   }, []);
 
   return (
