@@ -4,7 +4,7 @@
     "name": "2x2x2",
     "stock": "23",
     "img": "/images/products/cube2.jpg",
-    "price": "0",
+    "price": "990",
     "brand": "Moyu",
     "category": "Cubico",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -14,7 +14,7 @@
     "name": "3x3x3",
     "stock": "31",
     "img": "/images/products/cube3.jpg",
-    "price": "0",
+    "price": "1049",
     "brand": "Moyu",
     "category": "Cubico",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -24,7 +24,7 @@
     "name": "4x4x4",
     "stock": "18",
     "img": "/images/products/cube4.jpg",
-    "price": "0",
+    "price": "1849",
     "brand": "Moyu",
     "category": "Cubico",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -34,7 +34,7 @@
     "name": "3x3x5",
     "stock": "7",
     "img": "/images/products/cuboide335.jpg",
-    "price": "0",
+    "price": "9697",
     "brand": "WitEden",
     "category": "Cuboide",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -44,7 +44,7 @@
     "name": "3x3x6",
     "stock": "5",
     "img": "/images/products/cuboide336.jpg",
-    "price": "0",
+    "price": "12725",
     "brand": "WitEden",
     "category": "Cuboide",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -54,7 +54,7 @@
     "name": "3x3x9",
     "stock": "4",
     "img": "/images/products/cuboide339.jpg",
-    "price": "0",
+    "price": "14098",
     "brand": "WitEden",
     "category": "Cuboide",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -64,7 +64,7 @@
     "name": "Gear",
     "stock": "3",
     "img": "/images/products/gear3.jpg",
-    "price": "0",
+    "price": "1799",
     "brand": "Qiyi",
     "category": "Especial",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -74,17 +74,17 @@
     "name": "Mirror",
     "stock": "15",
     "img": "/images/products/mirror3.jpg",
-    "price": "0",
+    "price": "1349",
     "brand": "Moyu",
     "category": "Especial",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
     "id": "9",
-    "name": "Skew",
+    "name": "Skewb",
     "stock": "9",
     "img": "/images/products/skew.png",
-    "price": "0",
+    "price": "1669",
     "brand": "Moyu",
     "category": "Especial",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -94,7 +94,7 @@
     "name": "Pyraminx",
     "stock": "13",
     "img": "/images/products/pyraminx.jpg",
-    "price": "0",
+    "price": "3254",
     "brand": "Moyu",
     "category": "Minx",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -104,7 +104,7 @@
     "name": "Kilominx",
     "stock": "6",
     "img": "/images/products/kilominx.jpg",
-    "price": "0",
+    "price": "2615",
     "brand": "Qiyi",
     "category": "Minx",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
@@ -114,7 +114,7 @@
     "name": "Megaminx",
     "stock": "8",
     "img": "/images/products/megaminx.jpg",
-    "price": "0",
+    "price": "2989",
     "brand": "Qiyi",
     "category": "Minx",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
