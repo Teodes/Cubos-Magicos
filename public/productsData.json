@@ -6,7 +6,7 @@
     "img": "/images/products/cube2.jpg",
     "price": "990",
     "brand": "Moyu",
-    "category": "Cubico",
+    "category": "Cúbicos",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
@@ -16,7 +16,7 @@
     "img": "/images/products/cube3.jpg",
     "price": "1049",
     "brand": "Moyu",
-    "category": "Cubico",
+    "category": "Cúbicos",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
@@ -26,7 +26,7 @@
     "img": "/images/products/cube4.jpg",
     "price": "1849",
     "brand": "Moyu",
-    "category": "Cubico",
+    "category": "Cúbicos",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
@@ -36,7 +36,7 @@
     "img": "/images/products/cuboide335.jpg",
     "price": "9697",
     "brand": "WitEden",
-    "category": "Cuboide",
+    "category": "Cuboides",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
@@ -46,7 +46,7 @@
     "img": "/images/products/cuboide336.jpg",
     "price": "12725",
     "brand": "WitEden",
-    "category": "Cuboide",
+    "category": "Cuboides",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
@@ -56,7 +56,7 @@
     "img": "/images/products/cuboide339.jpg",
     "price": "14098",
     "brand": "WitEden",
-    "category": "Cuboide",
+    "category": "Cuboides",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
@@ -66,7 +66,7 @@
     "img": "/images/products/gear3.jpg",
     "price": "1799",
     "brand": "Qiyi",
-    "category": "Especial",
+    "category": "Especiales",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
@@ -76,7 +76,7 @@
     "img": "/images/products/mirror3.jpg",
     "price": "1349",
     "brand": "Moyu",
-    "category": "Especial",
+    "category": "Especiales",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
@@ -86,7 +86,7 @@
     "img": "/images/products/skew.png",
     "price": "1669",
     "brand": "Moyu",
-    "category": "Especial",
+    "category": "Especiales",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et faucibus massa. Vestibulum facilisis nunc massa, quis rutrum nisl ullamcorper at."
   },
   {
