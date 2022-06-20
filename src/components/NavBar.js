@@ -3,9 +3,9 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import CartWidget from "./CartWidget";
 import { NavLink } from "react-router-dom";
-import { NavDropdown } from "react-bootstrap";
 
 function NavBar() {
+  let linksArray = ["Cúbicos", "Cuboides", "Especiales", "Minx"];
   return (
     <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -16,21 +16,11 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={NavLink} to="/categoria/Cubico">
-              Cúbicos
-            </Nav.Link>
-
-            <Nav.Link as={NavLink} to="/categoria/Cuboide">
-              Cuboides
-            </Nav.Link>
-
-            <Nav.Link as={NavLink} to="/categoria/Especial">
-              Especiales
-            </Nav.Link>
-
-            <Nav.Link as={NavLink} to="/categoria/Minx">
-              Minx
-            </Nav.Link>
+            {linksArray.map((link) => (
+              <Nav.Link as={NavLink} to={`/categoria/${link}`}>
+                {link}
+              </Nav.Link>
+            ))}
             <Nav.Link as={NavLink} to="/404">
               Contacto
             </Nav.Link>
