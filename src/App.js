@@ -28,6 +28,10 @@ function App() {
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/categoria/:category" element={<ItemListContainer />} />
           <Route path="/detalle/:id" element={<ItemDetailContainer />} />
+          {
+            //TODO: Add cart page.
+          }
+          <Route path="/cart" element={<div />} />
           <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
         <ToastContainer newestOnTop />

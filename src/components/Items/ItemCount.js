@@ -1,6 +1,13 @@
 import { Button, ButtonGroup } from "react-bootstrap";
 
-export default function ItemCount({ stock, setQty, qty, error, addToCart }) {
+export default function ItemCount({
+  stock,
+  setQty,
+  qty,
+  error,
+  addToCart,
+  setPurchaseState,
+}) {
   function valueChange(operation) {
     if (operation === "+") {
       if (qty < stock) {
@@ -23,7 +30,10 @@ export default function ItemCount({ stock, setQty, qty, error, addToCart }) {
         size="s"
         variant="outline-info"
         className="col-6"
-        onClick={() => addToCart(qty)}
+        onClick={() => {
+          addToCart(qty);
+          setPurchaseState(`finished`);
+        }}
       >
         <strong>Comprar</strong>
       </Button>
