@@ -1,11 +1,8 @@
-import { useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 
 function Item({ product }) {
-  const [qty, setQty] = useState(1);
-
   return (
     <Card className="my-4" bg="dark" style={{ width: "18rem" }}>
       <Card.Img variant="top" src={product.img} />
