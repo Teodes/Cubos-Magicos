@@ -13,7 +13,7 @@ export default function ItemDetailContainer() {
       .then((data) => {
         setItem(data.find((prod) => prod.id === id));
       });
-  }, []);
+  }, [id]);
 
   return (
     <div className="ItemDetailContainer">
