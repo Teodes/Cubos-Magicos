@@ -17,14 +17,14 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             {linksArray.map((link) => (
-              <Nav.Link as={NavLink} to={`/categoria/${link}`}>
+              <Nav.Link as={NavLink} to={`/categoria/${link}`} key={link}>
                 {link}
               </Nav.Link>
             ))}
             <Nav.Link as={NavLink} to="/404">
               Contacto
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/carrito">
+            <Nav.Link as={NavLink} to="/cart">
               <CartWidget />
             </Nav.Link>
           </Nav>
