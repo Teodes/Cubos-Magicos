@@ -1,16 +1,12 @@
 import { Button, ButtonGroup } from "react-bootstrap";
+import { CartContext } from "../../context/cartContext";
+import { useContext, useState } from "react";
+import { error } from "../../Helpers/error";
 
-export default function ItemCount({
-  stock,
-  setQty,
-  qty,
-  error,
-  addToCart,
-  setPurchaseState,
-}) {
+export default function ItemCount({ item, setPurchaseState }) {
   function valueChange(operation) {
     if (operation === "+") {
-      if (qty < stock) {
+      if (qty < item.stock) {
         setQty(qty + 1);
       } else {
         error("Límite de stock alcanzado");
@@ -24,6 +20,11 @@ export default function ItemCount({
       }
     }
   }
+
+  const [qty, setQty] = useState(1);
+
+  const { addItemToCart } = useContext(CartContext);
+
   return (
     <div className="row justify-content-around">
       <Button
@@ -31,7 +32,7 @@ export default function ItemCount({
         variant="outline-info"
         className="col-6"
         onClick={() => {
-          addToCart(qty);
+          addItemToCart(item, qty);
           setPurchaseState(`finished`);
         }}
       >

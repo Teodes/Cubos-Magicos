@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 export default function ItemDetailContainer() {
-  const [qty, setQty] = useState(1);
   const [item, setItem] = useState({});
 
   const { id } = useParams();
@@ -13,11 +12,11 @@ export default function ItemDetailContainer() {
       .then((data) => {
         setItem(data.find((prod) => prod.id === id));
       });
-  }, [id]);
+  }, []);
 
   return (
     <div className="ItemDetailContainer">
-      <ItemDetail item={item} qty={qty} setQty={setQty} />
+      <ItemDetail item={item} />
     </div>
   );
 }

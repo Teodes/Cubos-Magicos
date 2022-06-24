@@ -1,11 +1,9 @@
 import ItemCount from "../ItemCount";
 import { Button, Container } from "react-bootstrap";
-import { addToCart } from "../../../Helpers/addToCart";
-import { error } from "../../../Helpers/error";
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-export default function ItemDetail({ item, qty, setQty }) {
+export default function ItemDetail({ item }) {
   const [purchaseState, setPurchaseState] = useState(``);
 
   return (
@@ -27,14 +25,7 @@ export default function ItemDetail({ item, qty, setQty }) {
             </Link>
           </div>
         ) : (
-          <ItemCount
-            stock={item.stock}
-            setQty={setQty}
-            qty={qty}
-            error={error}
-            addToCart={addToCart}
-            setPurchaseState={setPurchaseState}
-          />
+          <ItemCount item={item} setPurchaseState={setPurchaseState} />
         )}
       </div>
     </Container>
