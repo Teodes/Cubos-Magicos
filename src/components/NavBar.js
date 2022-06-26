@@ -24,7 +24,11 @@ function NavBar() {
             <Nav.Link as={NavLink} to="/404">
               Contacto
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/cart">
+            <Nav.Link
+              as={NavLink}
+              to="/cart"
+              className="d-flex justify-content-center"
+            >
               <CartWidget />
             </Nav.Link>
           </Nav>
