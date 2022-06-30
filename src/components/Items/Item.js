@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Item({ product }) {
   return (
     <Card className="my-4" bg="dark" style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={product.img} />
+      <Card.Img variant="top" src={product.srcImg} />
       <Card.Body>
         <Card.Title>{product.name}</Card.Title>
         <h3 style={{ color: "limegreen" }}>${product.price}</h3>

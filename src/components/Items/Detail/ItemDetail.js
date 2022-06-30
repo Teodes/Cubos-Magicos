@@ -8,7 +8,7 @@ export default function ItemDetail({ item }) {
 
   return (
     <Container className="d-flex flex-wrap justify-content-around row m0">
-      <img className="col-6" src={item.img} alt="Imagen del Producto" />
+      <img className="col-6" src={item.srcImg} alt="Imagen del Producto" />
       <div className="col-6 d-flex row align-content-around">
         <h2>{item.name}</h2>
         <h5>{item.description}</h5>
