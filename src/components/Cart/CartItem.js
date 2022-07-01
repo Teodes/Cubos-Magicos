@@ -23,7 +23,7 @@ export default function CartItem({ item }) {
     <Container className="d-flex flex-row justify-content-between align-items-center my-3">
       <img
         className="rounded-4"
-        src={`${item.img}`}
+        src={`${item.srcImg}`}
         style={{ width: "10em", height: "10em" }}
         alt="Imagen del Producto"
       />
