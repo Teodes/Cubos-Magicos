@@ -7,11 +7,11 @@ function CartWidget() {
   const { cart } = useContext(CartContext);
 
   let totalItems = 0;
-  // if (cart) {
+
   cart.forEach((item) => {
     totalItems = totalItems + item.qty;
   });
-  // }
+
   return (
     <div className="position-relative d-flex justify-content-center  align-self-center">
       <FontAwesomeIcon icon={faShoppingCart} />

@@ -18,33 +18,18 @@ function ItemListContainer() {
   const { category } = useParams();
 
   useEffect(() => {
-    if (category) {
-      const db = getFirestore();
-      const queryCollection = collection(db, "items");
-      const queryCollectionFilter = query(
-        queryCollection,
-        where("category", "==", category)
-      );
-      getDocs(queryCollectionFilter)
-        .then((resp) =>
-          setProducts(
-            resp.docs.map((item) => ({ id: item.id, ...item.data() }))
-          )
-        )
-        .catch((err) => console.log(err))
-        .finally(() => setLoading(false));
-    } else {
-      const db = getFirestore();
-      const queryCollection = collection(db, "items");
-      getDocs(queryCollection)
-        .then((resp) =>
-          setProducts(
-            resp.docs.map((item) => ({ id: item.id, ...item.data() }))
-          )
-        )
-        .catch((err) => console.log(err))
-        .finally(setLoading(false));
-    }
+    const db = getFirestore();
+    const queryCollection = collection(db, "items");
+    getDocs(
+      category
+        ? query(queryCollection, where("category", "==", category))
+        : queryCollection
+    )
+      .then((resp) =>
+        setProducts(resp.docs.map((item) => ({ id: item.id, ...item.data() })))
+      )
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
   }, [category]);
 
   return (
