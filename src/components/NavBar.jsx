@@ -17,7 +17,13 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             {linksArray.map((link) => (
-              <Nav.Link as={NavLink} to={`/categoria/${link}`} key={link}>
+              <Nav.Link
+                as={NavLink}
+                to={`/categoria/${link
+                  .normalize("NFD")
+                  .replace(/[\u0300-\u036f]/g, "")}`}
+                key={link}
+              >
                 {link}
               </Nav.Link>
             ))}
