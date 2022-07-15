@@ -1,8 +1,6 @@
-
 # Magicubes
 
 Este es un proyecto educativo realizado durante el curso de ReactJS con el fin de ser usado como proyecto final del mismo.
-
 
 ## Features
 
@@ -11,11 +9,9 @@ Este es un proyecto educativo realizado durante el curso de ReactJS con el fin d
 - Continuar con la compra ingresando los datos del usuario.
 - Registrar dicha compra en Firestore.
 
-
 ## 🚀 Author
 
 - [@Joaquín Emanuel Grachot Durán](https://www.github.com/teodes)
-
 
 ## Run Locally
 
@@ -28,7 +24,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd Cubos-Magicos
 ```
 
 Install dependencies
@@ -43,10 +39,10 @@ Start the server
   npm run start
 ```
 
-
 ## Technologies Used
 
-**Framework:** 
+**Framework:**
+
 - React
 
 **Dependencies:**
@@ -63,4 +59,3 @@ Start the server
 - react-scripts: 5.0.1
 - react-toastify: 9.0.3
 - sass: 1.52.1
-
