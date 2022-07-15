@@ -5,6 +5,7 @@ import {
   collection,
   getDocs,
   getFirestore,
+  orderBy,
   query,
   where,
 } from "firebase/firestore";
@@ -22,8 +23,12 @@ function ItemListContainer() {
     const queryCollection = collection(db, "items");
     getDocs(
       category
-        ? query(queryCollection, where("category", "==", category))
-        : queryCollection
+        ? query(
+            queryCollection,
+            orderBy("price"),
+            where("category", "==", category)
+          )
+        : query(queryCollection, orderBy("price"))
     )
       .then((resp) =>
         setProducts(resp.docs.map((item) => ({ id: item.id, ...item.data() })))
