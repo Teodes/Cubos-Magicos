@@ -15,7 +15,6 @@ export default function ItemCount({ item, setPurchaseState }) {
   }
 
   function valueChange(operation) {
-    //TODO: Cuando hay X cantidad de item en el cart, dicha cantidad no está siendo contemplada haciendo que el stock no sea limitante.
     if (operation === "+") {
       if (qty < item.stock - qtyInCart) {
         setQty(qty + 1);
