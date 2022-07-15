@@ -1,15 +1,66 @@
-# Proyecto Educativo para CODERHOUSE
 
-Este es un proyecto creado durante el curso de ReactJS de CoderHouse.
+# Magicubes
 
-## Tecnologías
+Este es un proyecto educativo realizado durante el curso de ReactJS con el fin de ser usado como proyecto final del mismo.
 
-Las tecnologias utilizadas son muy variadas, siendo algunas de ellas React-Bootstrap, Toastify, React-Router, SASS, y Firebase
 
-## Alumno:
+## Features
 
-Joaquín Grachot
+- Visualizar los items en venta, ya sea en su totalidad como por categorías.
+- Guardar los items en un carrito de compra.
+- Continuar con la compra ingresando los datos del usuario.
+- Registrar dicha compra en Firestore.
 
-### Tematica:
 
-La tematica del proyecto es un eccomerce sobre cubos de Rubik, aprovechando su variedad para realizar diferentes productos, brindando facilidad a la hora de categorizarlos y completar sus datos en un archivo JSON
+## 🚀 Author
+
+- [@Joaquín Emanuel Grachot Durán](https://www.github.com/teodes)
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Teodes/Cubos-Magicos
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Technologies Used
+
+**Framework:** 
+- React
+
+**Dependencies:**
+
+- fortawesome/fontawesome-svg-core: 6.1.1
+- fortawesome/free-solid-svg-icons: 6.1.1
+- fortawesome/react-fontawesome: 0.1.18
+- bootstrap: 5.2.0-beta1
+- firebase: 9.8.4
+- react: 18.1.0
+- react-bootstrap: 2.4.0
+- react-dom: 18.1.0
+- react-router-dom: 6.3.0
+- react-scripts: 5.0.1
+- react-toastify: 9.0.3
+- sass: 1.52.1
+
