@@ -1,79 +1,15 @@
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/cartContext";
 import CartItem from "./CartItem";
-import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+import CartButtons from "./CartButtons";
+import CartForm from "./CartForm";
 
 export default function CartListContainer() {
-  const { clearCart, cart } = useContext(CartContext);
+  const { cart, clearCart } = useContext(CartContext);
   const [purchaseId, setPurchaseId] = useState(false);
-
-  function CartButtons() {
-    if (cart.length === 0) {
-      if (purchaseId) {
-        return (
-          <div>
-            <h1>Compra exitosa!</h1>
-            <h3>
-              Tu orden de compra es: <strong>{purchaseId}</strong>
-            </h3>
-          </div>
-        );
-      } else {
-        return (
-          <div>
-            <h1>El carrito se encuentra vacío</h1>
-            <Link to={"/"}>
-              <Button>Ir a la Tienda</Button>
-            </Link>
-          </div>
-        );
-      }
-    } else {
-      return (
-        <>
-          <div>
-            <h2>
-              <strong>Precio Total: ${totalPrice}</strong>
-            </h2>
-          </div>
-          <div>
-            <Button
-              className="m-1"
-              variant="danger"
-              onClick={() => {
-                clearCart();
-              }}
-            >
-              Vaciar Carrito
-            </Button>
-            <Button
-              className="m-1"
-              variant="success"
-              onClick={(e) => {
-                generateOrder(e);
-                clearCart();
-                toast.success("¡Compra Finalizada!", {
-                  position: "bottom-right",
-                  autoClose: 3000,
-                  hideProgressBar: false,
-                  closeOnClick: true,
-                  pauseOnHover: true,
-                  draggable: true,
-                  progress: undefined,
-                  theme: "dark",
-                });
-              }}
-            >
-              Finalizar Compra
-            </Button>
-          </div>
-        </>
-      );
-    }
-  }
+  const [atCheckout, setAtCheckout] = useState(false);
 
   let totalPrice = 0;
   cart.forEach((item) => {
@@ -81,13 +17,11 @@ export default function CartListContainer() {
   });
 
   function generateOrder(e) {
-    e.preventDefault();
-
     let order = {};
     order.buyer = {
-      name: "Joaco",
-      email: "jgrachor@gmail.com",
-      tel: "3512345678",
+      name: e.target.name.value,
+      email: e.target.email.value,
+      tel: e.target.tel.value,
     };
     order.total = totalPrice;
 
@@ -105,10 +39,30 @@ export default function CartListContainer() {
 
     const db = getFirestore();
     const orderCollection = collection(db, "orders");
-    addDoc(orderCollection, order).then((resp) => {
-      setPurchaseId(resp.id);
-    });
-    //updateDoc para actualizar valores.
+    addDoc(orderCollection, order)
+      .then((resp) => {
+        setPurchaseId(resp.id);
+      })
+      .then(clearCart());
+  }
+
+  if (purchaseId) {
+    return (
+      <div className="py-5">
+        <h1>Compra exitosa!</h1>
+        <h3>
+          Tu orden de compra es: <strong>{purchaseId}</strong>
+        </h3>
+      </div>
+    );
+  }
+
+  if (atCheckout) {
+    return (
+      <div className="py-5">
+        <CartForm generateOrder={generateOrder} />
+      </div>
+    );
   }
 
   return (
@@ -118,7 +72,7 @@ export default function CartListContainer() {
           <CartItem item={item} key={item.id} />
         ))}
       </Container>
-      <CartButtons />
+      <CartButtons setAtCheckout={setAtCheckout} totalPrice={totalPrice} />
     </div>
   );
 }
