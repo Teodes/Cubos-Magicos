@@ -35,8 +35,6 @@ export default function CartListContainer() {
       return { id, name, price };
     });
 
-    console.log(order);
-
     const db = getFirestore();
     const orderCollection = collection(db, "orders");
     addDoc(orderCollection, order)
