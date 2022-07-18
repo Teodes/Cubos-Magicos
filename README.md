@@ -2,6 +2,9 @@
 
 Este es un proyecto educativo realizado durante el curso de ReactJS con el fin de ser usado como proyecto final del mismo.
 
+## Link
+- https://www.joaquingrachot.com.ar/
+
 ## Features
 
 - Visualizar los items en venta, ya sea en su totalidad como por categorías.
